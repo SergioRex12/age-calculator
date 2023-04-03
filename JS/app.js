@@ -18,6 +18,11 @@ const checkField = () => {
     const year = parseInt(document.querySelector('#year').value);
     const date = new Date();
     const actualYear = date.getFullYear();
+
+    console.log(day);
+    console.log(month);
+    console.log(year);
+    
     
     let error = false;
 
@@ -44,9 +49,8 @@ const checkField = () => {
     }
 
     if (error) return;
-    console.log(`${day}-${month}-${year}`);
     
-    const dataFinal = calcDate(new Date, `${day}-${month}-${year}`);
+    const dataFinal = calcDate(new Date, new Date(`${year}-${month}-${day}`));
 
     console.log(dataFinal);
 
