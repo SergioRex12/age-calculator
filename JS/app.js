@@ -33,7 +33,8 @@ const checkField = () => {
     } else {
         removeError("day");
     }
-    if (!month || month > 12) {
+    
+    if ((!month) || (month > 12)|| (month == 2 && day > 28)) {
         console.log("month null"); 
         createError("month");
         error = true;
