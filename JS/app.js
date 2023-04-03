@@ -100,8 +100,8 @@ function calcDate(date1, date2){
     */
 
     //new date instance
-    const dt_date1 = new Date(date1);
-    const dt_date2 = new Date(date2);
+    const dt_date1 = /*new Date(*/date1/*)*/;
+    const dt_date2 = /*new Date(*/date2/*)*/;
 
     //Get the Timestamp
     const date1_time_stamp = dt_date1.getTime();
@@ -131,3 +131,4 @@ function calcDate(date1, date2){
         years_passed
     } 
 }
+
