@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 86%);
+
+}
+
+html {
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.date-input {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+main {
+    background-color: white;
+    border-radius: 15px 15px 100px 15px;
+}
+
+hr {
+    flex-grow: 1;
+    border-top: 1px solid rgb(233, 223, 223);
+}
+
+label {
+    text-transform: uppercase;
+}
+input {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    width: 50%;
+    padding: 15px 5px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+}
+
+.btn-submit {
+    display: flex;
+    align-items: center;
+}
+
+.btn-submit img {
+    background-color: hsl(259, 100%, 65%);
+    padding: 10px;
+    border-radius: 45px;
+}
+
+.result h3, 
+.result p {
+    font-size: 50px;
+    color: hsl(259, 100%, 65%);
+    margin: 0;
+    font-weight: bold;
+}
+
+.result p {
+    color: hsl(0, 0%, 8%);
+}
+
+.error-text {
+    margin: 0;
+    color: hsl(0, 100%, 67%);
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+}
+.error-label {
+    color: hsl(0, 100%, 67%);
+}
+.error-box {
+    border-color: hsl(0, 100%, 67%);
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+}
+
+.flex-result {
+    display: flex;
+}
+
+.flex-result h3{
+    margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+    html {
+        width: 90%;
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    hr {
+        flex-grow: 1;
+        border-top: 1px solid rgb(233, 223, 223);
+        margin: 0;
+        height: 0;
+        width: 100%;
+    }
+
+    .btn-submit img {
+        background-color: hsl(259, 100%, 65%);
+        padding: 10px;
+        border-radius: 45px;
+    }
+
+    input {
+
+        width: 70%;
+    }
+}

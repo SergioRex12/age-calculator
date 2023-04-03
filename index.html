@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <main>
+        <section class="date-input">
+            <form action="#">
+
+                <div class="section-day">
+                    <label for="day">Day</label>
+                    <input type="number" name="day" id="day" placeholder="DD">
+                </div>
+
+                <div class="section-month">
+                    <label for="month">Month</label>
+                    <input type="number" name="day" id="month" placeholder="MM">
+
+                </div>
+                <div class="section-year">
+                    <label for="year">Year</label>
+                    <input type="number" name="year" id="year" placeholder="YYYY">
+
+                </div>
+            </form>
+
+            <section class="btn-submit">
+                <hr>
+                <img src="assets/images/icon-arrow.svg" alt="">
+
+            </section>
+
+
+            <section class="result">
+                <div class="flex-result">
+                    <h3 class="yars">- - </h3>
+                    <p>
+                        years
+                    </p>
+                </div>
+                <div class="flex-result">
+                    <h3 class="months">- -
+                    </h3>
+                    <p>
+                        months
+                    </p>
+                </div>
+
+                <div class="flex-result">
+                    <h3 class="days">- -
+                    </h3>
+                    <p>
+                        days
+                    </p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="JS/app.js"></script>
+</body>
+</html>
