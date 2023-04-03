@@ -26,7 +26,7 @@ const checkField = () => {
     
     let error = false;
 
-    if (!day || day > 31) {
+    if (!day || day > 31 || (month == 2 && day > 28)) {
         console.log("day null");
         createError("day");
         error = true;
@@ -34,7 +34,7 @@ const checkField = () => {
         removeError("day");
     }
     
-    if ((!month) || (month > 12)|| (month == 2 && day > 28)) {
+    if ((!month) || (month > 12)) {
         console.log("month null"); 
         createError("month");
         error = true;
